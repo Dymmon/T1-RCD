@@ -26,13 +26,7 @@ public class metodos_ws {
         for(int i=0; i<nombre.length();i++){
             letrauno=nombre.charAt(0);
             c=nombre.charAt(i);
-            
-            if(letrauno==' '){
-                stg="No inicialice el nombre con un espacio";
-            }else if(!Character.isLetter(letrauno)){
-                stg="No inicialice el nombre con un numero";
-            }
-            
+           
             if(i==0){
                 c=Character.toUpperCase(c);
             }
@@ -49,7 +43,7 @@ public class metodos_ws {
         }
         if(genero.equals("F") || genero.equals("f")){
             return "Sra." + stg;
-        }else if(genero.equals("G") || genero.equals("g")){
+        }else if(genero.equals("M") || genero.equals("M")){
             return "Sr." + stg;
         }else{
             return "Opción no válida";
