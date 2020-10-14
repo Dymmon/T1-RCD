@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws/" targetNamespace="http://ws/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nombre_propio" type="tns:nombre_propio" />
+  <xs:element name="nombre_propioResponse" type="tns:nombre_propioResponse" />
+  <xs:element name="val_digito" type="tns:val_digito" />
+  <xs:element name="val_digitoResponse" type="tns:val_digitoResponse" />
+  <xs:complexType name="nombre_propio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="genero" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nombre_propioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="val_digito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="val_digitoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

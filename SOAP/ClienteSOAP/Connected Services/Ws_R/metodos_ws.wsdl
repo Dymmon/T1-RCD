@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="metodos_ws" targetNamespace="http://ws/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SOAP_Back/metodos_ws?xsd=1" namespace="http://ws/" />
+    </xsd:schema>
+  </types>
+  <message name="nombre_propio">
+    <part name="parameters" element="tns:nombre_propio" />
+  </message>
+  <message name="nombre_propioResponse">
+    <part name="parameters" element="tns:nombre_propioResponse" />
+  </message>
+  <message name="val_digito">
+    <part name="parameters" element="tns:val_digito" />
+  </message>
+  <message name="val_digitoResponse">
+    <part name="parameters" element="tns:val_digitoResponse" />
+  </message>
+  <portType name="metodos_ws">
+    <operation name="nombre_propio">
+      <input wsam:Action="http://ws/metodos_ws/nombre_propioRequest" message="tns:nombre_propio" />
+      <output wsam:Action="http://ws/metodos_ws/nombre_propioResponse" message="tns:nombre_propioResponse" />
+    </operation>
+    <operation name="val_digito">
+      <input wsam:Action="http://ws/metodos_ws/val_digitoRequest" message="tns:val_digito" />
+      <output wsam:Action="http://ws/metodos_ws/val_digitoResponse" message="tns:val_digitoResponse" />
+    </operation>
+  </portType>
+  <binding name="metodos_wsPortBinding" type="tns:metodos_ws">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="nombre_propio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="val_digito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="metodos_ws">
+    <port name="metodos_wsPort" binding="tns:metodos_wsPortBinding">
+      <soap:address location="http://localhost:8080/SOAP_Back/metodos_ws" />
+    </port>
+  </service>
+</definitions>
