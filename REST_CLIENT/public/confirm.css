@@ -1,0 +1,13 @@
+.mensaje{
+        color: yellow;
+        text-shadow: 2px 2px #080808;
+        font-family: sans-serif;
+        font-size: 28px;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 40px;
+}
+#button2{
+    position: center;
+    margin-top: 20px;
+}
