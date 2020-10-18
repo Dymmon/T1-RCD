@@ -3,7 +3,7 @@
 
 ### Web Service SOAP
 Se debe descargar cualquier version de "apache-tomcat-8.0.X-windows-x64/x86.zip", una descargado se debe descomprimir el 
-archivo, una vez descomprimido copie y pege la carpeta en el disco C:\. Luego debe colocar el archivo "SOAP_Back.war" que 
+archivo, una vez descomprimido copie y pege la carpeta en el disco "C:\". Luego debe colocar el archivo "SOAP_Back.war" que 
 esta en T1-RCD/SOAP/SOAP_Back/dist, en la carpeta "webapps" que está dentro de "apache-tomcat-version". Despues debe ir a 
 las variales de entorno del sistema, una vez dentro en "Variales del sistema" debe ver si estan creadas las variable 
 JAVA_HOME y JRE_HOME, de no estar las debera crear dando click en el boton "nueva" de mas abajo, se dezplejara una pestaña 
