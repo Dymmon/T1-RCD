@@ -2,8 +2,8 @@
 
 
 ### Web Service SOAP
-Se debe descargar cualquier version de "apache-tomcat-8.0.X-windows-x64/x86.zip", una descargado se debe descomprimir el 
-archivo, una vez descomprimido copie y pege la carpeta en el disco "C:\". Luego debe colocar el archivo "SOAP_Back.war" que 
+Se debe descargar cualquier version de "apache-tomcat-8.0.X-windows-x64/x86.zip", una vez descargado se debe descomprimir el 
+archivo, copie y pege la carpeta resultante en el disco "C:\". Luego debe colocar el archivo "SOAP_Back.war" que 
 esta en T1-RCD/SOAP/SOAP_Back/dist, en la carpeta "webapps" que está dentro de "apache-tomcat-version". Despues debe ir a 
 las variales de entorno del sistema, una vez dentro en "Variales del sistema" debe ver si estan creadas las variable 
 JAVA_HOME y JRE_HOME, de no estar las debera crear dando click en el boton "nueva" de mas abajo, se dezplejara una pestaña 
@@ -12,7 +12,7 @@ debe poner la direcion de la carpeta de java a utilizar en este caso se esta tra
 carpeta tendria que ser "C:\Program Files\Java\jre1.8.0_91", despues tendre que hacer click en la variable de sistema llamada 
 "Path", una vez dentro de esta tendra que crear dos nuevas "variables  de entorno" una sera "%CATALINA_HOME%\bin" y la otra 
 sera la carpeta bin del java utilizado que seria  "C:\Program Files\Java\jre1.8.0_91", una vez hecho esto podremos abrir 
-consola de comandos "cmd" y escribir "catalina start" para iniciar el servidor tomcat y finalizarlo se tendra que escribir 
+consola de comandos "cmd" y escribir "catalina start" para iniciar el servidor tomcat, para finalizarlo se tendra que escribir 
 "catalina stop".
 
 ## Cliente Web SOAP
@@ -29,4 +29,7 @@ y luego “mvn clean package spring-boot:repackage” esto generara la carpeta T
 
 
 ### Requerimientos
+#Para SOAP
+  -ISS
+  -Tomcat
 ### Abrir Sitio Web
