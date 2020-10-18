@@ -21,8 +21,10 @@ un nombre para el sitio y en la sección de "Ruta de acceso física" seleccionar
 Escojer un puerto disponible para el usuario y dar click en aceptar.
 Posterormente en su navegador al acceder a "localhost:puerto asignado" se debe ver el cliente ejecutandose.
 ## Web Service Rest
+Si no se encuentra la carpeta "Target":
 Ubicarse con la terminal en la carpeta Rest y ejecutar el comando "mvn compile"
-y luego “mvn clean package spring-boot:repackage” esto generara la carpeta Target donde se encuentra el archivo .jar
+y luego “mvn clean package spring-boot:repackage” esto generara la carpeta "Target" donde se encuentra el archivo .jar
+Ubicarse en la carpeta target y ejecutar el archivo .jar para iniciar el servicio en el localhost:8080.
 
 ## Cliente Web REST
 
