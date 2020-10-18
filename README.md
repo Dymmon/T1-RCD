@@ -27,7 +27,14 @@ y luego “mvn clean package spring-boot:repackage” esto generara la carpeta "
 Ubicarse en la carpeta target y ejecutar el archivo .jar para iniciar el servicio en el localhost:8080.
 
 ## Cliente Web REST
-
+-activar el iis desde las características de Windows
+-Abrir una consola de comandos y ubicarse en la carpeta netframework 4.0
+-ejecutar el comando asp.NET_regiis.exe -ir
+-mover la carpeta a intpub 
+-abrir el administrador de servicio de internet
+-verificar que las aplicaciones por default usen asp.net 4.0
+Convertir la carpeta cliente_rest en aplicacion
+-examinar la carpeta cliente_rest para obtener la ruta y que esta se abra en el navegador
 
 ### Requerimientos
 ## Para SOAP
